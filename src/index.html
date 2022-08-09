@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{
+  "title":"Ready On"
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main class="page">
+        <section class="page__mainscreen mainscreen">
+          <div class="mainscreen__container _container">
+            <div class="mainscreen__content">
+              <h1 class="mainscreen__title main-title">ТРЕК-ДНИ <br><span>С READYONE</span></h1>
+              <div class="mainscreen__text">
+                <span></span>
+                <p>
+                  Не просто аренда спорткара, а настоящее 
+                  погружение в мир автоспорта
+                </p>
+              </div>
+              <button class="mainscreen__btn btn">ЗАКАЗАТЬ</button>
+            </div>
+            <div class="mainscreen__mouse"><span></span></div>
+          </div>
+        </section>
+        <section class="page__date date">
+          <div class="date__container _container">
+            <h2 class="date__title main-title">Выбери дату<br><span>для поездки</span></h2>
+            <div class="date__body">
+              <div class="date__slider slider-date">
+                <div class="slider-date__body _swiper">
+                  <div class="slider-date__slide">
+                    <h2 class="slider-date__title"><span>31</span>мая</h2>
+                    <div class="slider-date__day">вторник</div>
+                    <div class="slider-date__slide-body">
+                      <a class="slider-date__icon" href="#">
+                        <img src="@img/avatar/1.png" alt="instructor">
+                        <div class="slider-date__icon-body">
+                          <div class="slider-date__icon-name">Яркко Миеттинен</div>
+                          <div class="slider-date__icon-post">инструктор</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="slider-date__slide">
+                    <h2 class="slider-date__title"><span>6</span>июня</h2>
+                    <div class="slider-date__day">понедельник</div>
+                    <div class="slider-date__slide-body">
+                      <a class="slider-date__icon" href="#">
+                        <img src="@img/avatar/1.png" alt="instructor">
+                        <div class="slider-date__icon-body">
+                          <div class="slider-date__icon-name">Яркко Миеттинен</div>
+                          <div class="slider-date__icon-post">инструктор</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="slider-date__slide">
+                    <h2 class="slider-date__title"><span>1</span>июня</h2>
+                    <div class="slider-date__day">среда</div>
+                    <div class="slider-date__slide-body">
+                      <a class="slider-date__icon" href="#">
+                        <img src="@img/avatar/1.png" alt="instructor">
+                        <div class="slider-date__icon-body">
+                          <div class="slider-date__icon-name">Яркко Миеттинен</div>
+                          <div class="slider-date__icon-post">инструктор</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-date__arrows slider-arrows">
+                  <button class="slider__arrow slider-arrow_prev _icon-shape-down"></button>
+                  <button class="slider__arrow slider-arrow_next _icon-shape-down"></button>
+                </div>
+              </div>
+              <div class="date__datepicker">
+                <div class="datepicker">
+                  <input data-datepicker>
+                </div>
+                <div class="date__reviews">
+                  <div class="review-date date__review">
+                    <div class="review-date__date">
+                      <div class="review-date__number"><span>19</span></div>
+                      <div class="review-date__month">августа</div>
+                      <div class="review-date__day">пятница</div>
+                    </div>
+                    <div class="review-date__text">
+                      Моя поездка была не описуема! Я обязательно возьму вторую поездку.
+                    </div>
+                  </div>
+                   <div class="review-date date__review">
+                    <div class="review-date__date">
+                      <div class="review-date__number"><span>22</span></div>
+                      <div class="review-date__month">августа</div>
+                      <div class="review-date__day">понедельник</div>
+                    </div>
+                    <div class="review-date__text">
+                      Моя поездка была не описуема! Я обязательно возьму вторую поездку.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+      @@include('html/footer.html',{})
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
