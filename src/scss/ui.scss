@@ -72,3 +72,17 @@
     transform: rotate(-90deg);
   }
 }
+
+._title {
+  font-family: BebasNeuePro;
+  font-style: italic;
+  font-weight: 700;
+  @include adaptiv-value('font-size', 80, 32, 1);
+  line-height: 115%;
+  text-transform: uppercase;
+  background: linear-gradient(89.66deg, #FFFFFF 59.67%, #EBDDDD 103.39%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

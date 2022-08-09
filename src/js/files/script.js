@@ -70,4 +70,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     targetElement.closest('.qs-square').classList.add('qs-active');
   }
+
+  //*Удаление background img с program
+  function removeBg(element) {
+    document.querySelectorAll(element).forEach(item => {
+      if (item.classList.contains('_ibg')) {
+        item.classList.remove('_ibg');
+        item.style.backgroundImage = '';
+        document.querySelector(`${element} img`).remove();
+      }
+    });
+  }
+  if (window.innerWidth < 767.98) {
+    removeBg('.item-program');
+  }
+
 });

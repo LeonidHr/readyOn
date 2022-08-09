@@ -13,7 +13,6 @@
 	$result: math.div($px, $current) + em;
 	@return $result;
 }
-
 //Адаптивное свойство
 @mixin adaptiv-value($property, $startSize, $minSize, $type) {
 	$addSize: $startSize - $minSize;
