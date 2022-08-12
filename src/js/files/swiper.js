@@ -81,4 +81,30 @@ if (document.querySelector('.slider-date__body')) {
 	});
 }
 
+//slider-cars__body
 
+if (document.querySelector('.slider-cars__body')) {
+	new Swiper('.slider-cars__body', {
+		slidesPerView: 4, 
+		spaceBetween: 0,
+		watchOverflow: false,
+		speed: 800,
+		loop: true,
+		loopAdditionalSlides: 5,
+		preloadImages: true,
+
+		breakpoints: {
+			767: {
+				slidesPerView: 4, 
+			},
+			500: {
+				centeredSlides: true,
+				slidesPerView: 3, 
+			},
+			320: {
+				centeredSlides: true,
+				slidesPerView: 1.5, 
+			},
+		}
+	});
+}

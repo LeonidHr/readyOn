@@ -1,5 +1,6 @@
 // Проверка на мобайл
 import { isMobile } from "./functions.js";
+import { ibg } from "./functions.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("click", documentEvents);
@@ -36,6 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
           behavior: "smooth",
         });
       }
+    }
+
+    if (targetElement.closest('.pagination-tabs-cars__item')) {
+      e.preventDefault();
+      carsTabs(targetElement.closest('.pagination-tabs-cars__item'));
     }
   }
 
@@ -83,6 +89,47 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (window.innerWidth < 767.98) {
     removeBg('.item-program');
+  }
+
+  //* Табы=========================================================================
+  function carsTabs(targetEl) {
+    const cars = document.querySelectorAll('.tabs-cars__car'),
+          tabs = document.querySelectorAll('.pagination-tabs-cars__item');
+
+    if (tabs.length) {
+      for (let i = 0; i < cars.length; i++) {
+        cars[i].classList.remove('_active');
+        tabs[i].classList.remove('_active');
+      }
+    }      
+
+    targetEl.classList.add('_active');
+    cars[targetEl.dataset.car].classList.add('_active');
+  }
+
+  addTabsBtns();
+  carsTabs(document.querySelector('.pagination-tabs-cars__item'));
+
+  function addTabsBtns() {
+    const cars = document.querySelectorAll('.tabs-cars__car'),
+          tabs = document.querySelector('.pagination-tabs-cars'),
+          modelName = document.querySelectorAll('.img-main-cars__title'),
+          modelSrc = document.querySelectorAll('._tab-img');
+      
+    for (let i = 0; i < cars.length; i++) {
+      tabs.insertAdjacentHTML("beforeend", `
+        <button class="pagination-tabs-cars__item" data-car="${i}" type="button">
+          <div class="pagination-tabs-cars__img _ibg">
+            <img src="${modelSrc[i].getAttribute('src')}" alt="porshe">
+          </div>
+          <div class="pagination-tabs-cars__body">
+            <div class="pagination-tabs-cars__name">${modelName[i].innerHTML}</div>
+          </div>
+        </button>
+      `);
+      ibg();
+    }
+
   }
 
 });
