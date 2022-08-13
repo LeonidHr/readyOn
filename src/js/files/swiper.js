@@ -1,4 +1,4 @@
-import Swiper, { Navigation, EffectFade } from "swiper";
+import Swiper, { Navigation, EffectFade, Pagination } from "swiper";
 
 //BildSlider
 let sliders = document.querySelectorAll('._swiper');
@@ -106,5 +106,48 @@ if (document.querySelector('.slider-cars__body')) {
 				slidesPerView: 1.5, 
 			},
 		}
+	});
+}
+
+if (document.querySelector('.slider-reviews__body')) {
+	new Swiper('.slider-reviews__body', {
+		modules: [Navigation, Pagination],
+		watchOverflow: true,
+		speed: 800,
+		loop: true,
+		loopAdditionalSlides: 5,
+		preloadImages: true,
+		navigation: {
+			nextEl: " .slider-reviews .slider-arrow_next",
+			prevEl: " .slider-reviews .slider-arrow_prev",
+		},
+		pagination: {
+			el: ".controls-slider-reviews__dots",
+			clickable: true,
+		},
+		breakpoints: {
+			1200: {
+				slidesPerView: 4, 
+				spaceBetween: 30,
+			},
+			930: {
+				slidesPerView: 3,
+				spaceBetween: 25, 
+			},
+			767: {
+				slidesPerView: 2,
+				spaceBetween: 20, 
+			},
+			550: {
+				slidesPerView: 1.6,
+				spaceBetween: 15, 
+			},
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 10, 
+			},
+		}
+
+
 	});
 }

@@ -132,4 +132,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  //* Показ количества отзывов===========================================================
+
+  function showQuantityReviews() {
+    document.querySelector('.counter-reviews__estimates span').innerHTML = 
+    document.querySelectorAll('.swiper-pagination-bullet').length;
+  }
+  showQuantityReviews();
 });
