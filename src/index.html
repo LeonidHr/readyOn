@@ -7,7 +7,7 @@
     <div class="wrapper">
       @@include('html/header.html',{})
       <main class="page">
-        <section class="page__mainscreen mainscreen">
+        <section id="main" class="page__mainscreen mainscreen">
           <div class="mainscreen__container _container">
             <div class="mainscreen__content">
               <h1 class="mainscreen__title main-title">ТРЕК-ДНИ <br><span>С READYONE</span></h1>
@@ -197,7 +197,7 @@
             <button class="program__btn btn" type="button">ЗАКАЗАТЬ</button>
           </div>
         </section>
-        <section class="page__cars cars">
+        <section id="cars" class="page__cars cars">
           <div class="cars__container _container">
             <div class="cars__top">
               <h2 class="cars__title _title">СПОРТКАРЫ</h2>
@@ -278,7 +278,7 @@
             </div>
           </div>
         </section>
-        <section class="page__gift gift">
+        <section id="certificates" class="page__gift gift">
           <div class="gift__container _container">
             <div class="gift__content content-gift">
               <h2 class="content-gift__title _title">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</h2>
@@ -315,7 +315,7 @@
             </div>
           </div>
         </section>
-        <section class="page__how how">
+        <section id="how" class="page__how how">
           <div class="how__container _container">
             <div class="how__top">
               <h2 class="how__title _title">КАК ПРОХОДИТ ЗАЕЗД</h2>
@@ -479,6 +479,92 @@
                 </div>
                 <div class="controls-slider-reviews__dots"></div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__questions questions">
+          <div class="questions__container _container">
+            <div data-spollers data-one-spoller class="questions__body">
+              <div class="questions__item">
+                <button data-spoller class="questions__title _icon-shape-down" type="button">
+                  <span>Что такое “трек-день”?</span>
+                </button>
+                <div class="questions__content">
+                  <div class="questions__text">
+                    "Трек-день" – день, когда гоночная трасса открыта для всех желающих. В рамках трек-дней мы и проводим наши заезды. Расписание трек-дней обычно известно за несколько недель. Мы можем приглашать для участия в них и бронировать заезды.
+                  </div>
+                </div>
+              </div>
+              <div class="questions__item">
+                <button data-spoller class="questions__title _icon-shape-down" type="button">
+                  <span>
+                    Что такое “заезд” и почему его продолжительность различается на разных трассах?
+                  </span>
+                </button>
+                <div class="questions__content">
+                  <div class="questions__text">
+                    "Трек-день" – день, когда гоночная трасса открыта для всех желающих. В рамках трек-дней мы и проводим наши заезды. Расписание трек-дней обычно известно за несколько недель. Мы можем приглашать для участия в них и бронировать заезды.
+                  </div>
+                </div>
+              </div>
+              <div class="questions__item">
+                <button data-spoller class="questions__title _icon-shape-down" type="button">
+                  <span>Можно ли приехать на гоночную трассу компанией?</span>
+                </button>
+                <div class="questions__content">
+                  <div class="questions__text">
+                    "Трек-день" – день, когда гоночная трасса открыта для всех желающих. В рамках трек-дней мы и проводим наши заезды. Расписание трек-дней обычно известно за несколько недель. Мы можем приглашать для участия в них и бронировать заезды.
+                  </div>
+                </div>
+              </div>
+              <div class="questions__item">
+                <button data-spoller class="questions__title _icon-shape-down" type="button">
+                  <span>Какой возраст и стаж необходим для участия в заезде?</span>
+                </button>
+                <div class="questions__content">
+                  <div class="questions__text">
+                    "Трек-день" – день, когда гоночная трасса открыта для всех желающих. В рамках трек-дней мы и проводим наши заезды. Расписание трек-дней обычно известно за несколько недель. Мы можем приглашать для участия в них и бронировать заезды.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__feedback feedback">
+          <div class="feedback__container _container">
+            <div class="feedback__item feedback__item-content">
+              <h2 class="feedback__title _title">НЕ НАШЛИ ОТВЕТА НА СВОЙ ВОПРОС?</h2>
+              <div class="feedback__label">Напишите или позвоните нам</div>
+              <div class="feedback__contacts">
+                <a class="feedback__phone feedback__contacts-item _icon-arrow-top" href="tel:+3287766164">+32 87 76 61 64</a>
+                <a class="feedback__email feedback__contacts-item _icon-arrow-top" href="mailto:email@readyon.be" target="_blank">
+                  email@readyon.be
+                </a>
+              </div>
+            </div>
+            <div class="feedback__item feedback__item-form">
+              <form action="#" class="feedback__form form-feedback">
+                <div class="form-feedback__item">
+                  <label for="name" class="form-feedback__label">Как вас зовут?</label>
+                  <input type="text" name="name" class="form-feedback__input _name" data-req autocomplete="off">
+                </div>
+                <div class="form-feedback__item">
+                  <label for="email" class="form-feedback__label">Email</label>
+                  <input type="text" name="email" class="form-feedback__input _email" autocomplete="off" data-req>
+                </div>
+                <div class="form-feedback__item">
+                  <label for="textarea" class="form-feedback__label">Сообщение</label>
+                  <textarea name="textarea" class="form-feedback__input form-feedback__input_textarea _message" data-req></textarea>
+                </div>
+                <div class="form-feedback__item form-feedback__item_checkbox" >
+                  <input type="checkbox" name="checkbox" class="form-feedback__checkbox" tabindex="-1" data-req>
+                  <label for="checkbox" class="form-feedback__label form-feedback__label_inline _icon-check">
+                    Я согласен на обработку персональных данных
+                  </label>
+                </div>
+                <button class="form-feedback__btn btn" type="submit">ОТПРАВИТЬ</button>
+                <div class="form-feedback__modal modal-form"></div>
+              </form>
             </div>
           </div>
         </section>

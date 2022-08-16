@@ -1,6 +1,9 @@
 // Проверка на мобайл
 import { isMobile } from "./functions.js";
 import { ibg } from "./functions.js";
+import { stylingCheckbox } from "./forms.js";
+import { closeModal } from "./forms.js";
+
 
 document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("click", documentEvents);
@@ -43,6 +46,23 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       carsTabs(targetElement.closest('.pagination-tabs-cars__item'));
     }
+
+    if (targetElement.closest('.form-feedback__item_checkbox')) {
+      stylingCheckbox();
+    }
+
+    if (document.querySelector('.form-feedback._sending')) {
+      if (targetElement.classList.contains('modal-form__btn') || !targetElement.classList.contains('modal-form__content')) {
+        e.preventDefault();
+        closeModal();
+      }
+    }
+
+    if (targetElement.classList.contains('menu__link')) {
+      e.preventDefault();
+      scrollToBlock(targetElement);
+    }
+
   }
 
   //* Функция изменения языка
@@ -139,4 +159,35 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.swiper-pagination-bullet').length;
   }
   showQuantityReviews();
+
+  //* навигация======================================================================
+  function scrollToBlock(btn) {
+    const btnLink = btn.getAttribute('href');
+    
+    if (btnLink) {
+      const currentSection = document.querySelector(btnLink);
+
+      window.scrollBy({
+        top: currentSection.getBoundingClientRect().top,
+        behavior: "smooth",
+      });
+      
+      document.documentElement.classList.remove("menu-open");
+      document.body.classList.remove('_lock');
+    }
+  }
+
+  //* анимация при прокрутке блока program=======================================
+  document.addEventListener("scroll", showBocks);
+
+  function showBocks() {
+    const blocks = document.querySelectorAll('.item-program');
+
+    blocks.forEach(item => {
+      if (window.scrollY + (window.innerHeight - 250) > item.offsetTop){
+        item.classList.add('_show');
+      }
+    });
+  }
+
 });

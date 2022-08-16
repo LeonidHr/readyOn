@@ -1,8 +1,12 @@
 import * as functions  from "./files/functions.js";
 import * as forms from "./files/forms.js";
 
+forms.formInit();
+
 functions.isWebp();
 functions.ibg();
+functions.spollers();
+
 
 // Динамичесский адаптив
 import "./files/dynamic_adapt.js";
