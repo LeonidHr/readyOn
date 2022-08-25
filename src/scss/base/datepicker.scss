@@ -224,6 +224,7 @@
 }
 .qs-square {
 	cursor: pointer;
+		border: 2px solid transparent;
 }
 
 .qs-datepicker .qs-square.qs-current {
@@ -233,7 +234,8 @@
 	text-decoration: underline;
 }
 .qs-active:not(:first-child, :nth-child(6)) {
-	outline: 2px solid $redColor;
+	border: 2px solid $redColor;
+	border-radius: 50%;
 }
 .qs-datepicker .qs-square.qs-range-date-start:not(.qs-range-date-6) {
 	border-top-right-radius: 0;
@@ -313,7 +315,7 @@
 	&::after {
 		content: '';
 		position: absolute;
-		bottom: 10px;
+		bottom: 6px;
 		left: 50%;
 		transform: translateX(-50%);
 		border-radius: 50%;
@@ -399,17 +401,6 @@
 		&:nth-child(6) {
 			position: relative;
 			background-color: $redColor;
-			// &::before {
-			// 	content: '';
-			// 	position: absolute;
-			// 	top: 0;
-			// 	left: 0;
-			// 	z-index: 0;
-			// 	border-radius: 50%;
-			// 	background-color: $redColor;
-			// 	width: 54px;
-			// 	height: 54px;
-			// }
 		}
 	}
 }

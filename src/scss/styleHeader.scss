@@ -135,9 +135,10 @@
 
 	&__lang {
 		font-family: Averta;
-		@include adaptiv-value('margin-right', 45, 0, 1);
+		@include adaptiv-value('margin-right', 45, 11, 1);
 		display: flex;
 		align-items: center;
+		gap: rem(8);
 		font-weight: 700;
 		line-height: 140%;
 		position: relative;
@@ -153,7 +154,6 @@
 			font-weight: 700;
 			font-size: rem(15);
 			line-height: 140%;
-			margin: 0 16px 0 0;	
 
 			@media (min-width: rem(1100)){
 				margin: 0 6px 0 0;
@@ -163,11 +163,15 @@
 				color: #0E0E0E;
 				font-weight: 600;
 				line-height: 151%;
-				padding: 9px 10px;
+				width: rem(40);
+				height: rem(40);
 				border-radius: 50%;
 				background-color: #fff;
 				position: relative;
 				z-index: 4;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 		}
 
@@ -407,7 +411,7 @@
 		}
 
 		@media (max-width: rem(1100)){
-			font-size: rem(16);
+			font-size: rem(20);
 			&:not(:last-child) {
 				margin: 0 0 em(15) 0;
 			}
@@ -419,17 +423,13 @@
 	}
 }
 
-.icon-menu {
-}
-.menu-icon {
-}
 .actions-header {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 10px;
 	@media (min-width: $mobile){
-		@include adaptiv-value('margin-right', 40, 17, 1);
+		@include adaptiv-value('margin-right', 35, 17, 1);
 		justify-content: space-between;
 	}
 
@@ -467,7 +467,7 @@
 				padding: 13px;
 				background-color: $redColor;
 				border-radius: 50%;
-				margin: 0 16px 0 0;
+				margin: 0 rem(10) 0 0;
 				display: none;
 
 				.menu-open & {
@@ -480,7 +480,6 @@
 
 	}
 }
-
 
 //====================================================================================================
 

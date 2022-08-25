@@ -9,7 +9,7 @@ functions.spollers();
 
 
 // Динамичесский адаптив
-import "./files/dynamic_adapt.js";
+// import "./files/dynamic_adapt.js";
 
 //Подключение файла swiper
 import "./files/swiper.js";
