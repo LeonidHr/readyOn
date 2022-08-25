@@ -607,6 +607,7 @@ body._lock {
 
 .qs-square {
   cursor: pointer;
+  border: 2px solid transparent;
 }
 
 .qs-datepicker .qs-square.qs-current {
@@ -619,7 +620,8 @@ body._lock {
 
 .qs-active:not(:first-child,
 :nth-child(6)) {
-  outline: 2px solid #DE131E;
+  border: 2px solid #DE131E;
+  border-radius: 50%;
 }
 
 .qs-datepicker .qs-square.qs-range-date-start:not(.qs-range-date-6) {
@@ -702,7 +704,7 @@ body._lock {
 .qs-num._dot::after {
   content: "";
   position: absolute;
-  bottom: 10px;
+  bottom: 6px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -934,6 +936,7 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 0.5rem;
   font-weight: 700;
   line-height: 140%;
   position: relative;
@@ -950,7 +953,6 @@ body._lock {
   font-weight: 700;
   font-size: 0.9375rem;
   line-height: 140%;
-  margin: 0 16px 0 0;
 }
 
 .header__arrow {
@@ -2537,7 +2539,7 @@ body._lock {
   }
 
   .actions-header {
-    margin-right: 40px;
+    margin-right: 35px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2986,7 +2988,7 @@ body._lock {
   }
 
   .header__lang {
-    margin-right: calc(0px + 45 * ((100vw - 320px) / 970));
+    margin-right: calc(11px + 34 * ((100vw - 320px) / 970));
   }
 
   .footer {
@@ -3328,7 +3330,7 @@ body._lock {
   }
 
   .menu__link {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .menu__link:not(:last-child) {
@@ -3481,11 +3483,21 @@ body._lock {
     color: #0E0E0E;
     font-weight: 600;
     line-height: 151%;
-    padding: 9px 10px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     background-color: #fff;
     position: relative;
     z-index: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .header__arrow {
@@ -3517,7 +3529,7 @@ body._lock {
     padding: 13px;
     background-color: #DE131E;
     border-radius: 50%;
-    margin: 0 16px 0 0;
+    margin: 0 0.625rem 0 0;
     display: none;
   }
 
@@ -3802,7 +3814,7 @@ body._lock {
 
 @media (min-width: 47.99875em) and (max-width: 1290px) {
   .actions-header {
-    margin-right: calc(17px + 23 * ((100vw - 320px) / 970));
+    margin-right: calc(17px + 18 * ((100vw - 320px) / 970));
   }
 
   .footer__cotnainer {
