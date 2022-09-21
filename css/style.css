@@ -621,7 +621,7 @@ body._lock {
 .qs-active:not(:first-child,
 :nth-child(6)) {
   border: 2px solid #DE131E;
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
 
 .qs-datepicker .qs-square.qs-range-date-start:not(.qs-range-date-6) {
@@ -836,6 +836,27 @@ body._lock {
 
 .swiper-button-lock {
   display: none !important;
+}
+
+.tabs__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs__title {
+  border: 1px solid #eee;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.3125rem;
+}
+
+.tabs__title._tab-active {
+  border: 1px solid #000;
+}
+
+.tabs__content {
+  border: 1px solid #eee;
+  padding: 0.625rem 0.9375rem;
 }
 
 .header {
@@ -1509,7 +1530,23 @@ body._lock {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.cars__bottom {
+.tabs-cars__car {
+  position: relative;
+}
+
+.tabs-cars__main-img {
+  width: calc(100% + 400px);
+  position: relative;
+  padding: 0 0 75% 0;
+  top: 0;
+  left: -200px;
+}
+
+.tabs-cars__description {
+  padding-bottom: 61px;
+}
+
+.tabs-cars__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1525,61 +1562,14 @@ body._lock {
           justify-content: center;
 }
 
-.cars__btn {
+.tabs-cars__btn {
   margin: 0 0 25px 0;
 }
 
-.cars__prise {
+.tabs-cars__prise {
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 154.1%;
-}
-
-.tabs-cars__body {
-  padding-bottom: 61px;
-}
-
-.tabs-cars__car {
-  position: relative;
-  display: none;
-}
-
-.tabs-cars__car._active {
-  display: block;
-  -webkit-animation: carAnim 0.5s ease 0s;
-          animation: carAnim 0.5s ease 0s;
-}
-
-@-webkit-keyframes carAnim {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes carAnim {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.tabs-cars__main-img {
-  width: calc(100% + 400px);
-  position: relative;
-  padding: 0 0 75% 0;
-  top: 0;
-  left: -200px;
-}
-
-.pagination-tabs-cars {
-  display: none;
 }
 
 .img-main-cars {
@@ -2638,10 +2628,6 @@ body._lock {
     cursor: pointer;
   }
 
-  .pagination-tabs-cars__item._active .pagination-tabs-cars__body {
-    padding: 15px 45px 68px 36px;
-  }
-
   .pagination-tabs-cars__img {
     padding: 0 0 100px 230px;
     -webkit-transform: translate(0, 6px);
@@ -3099,12 +3085,12 @@ body._lock {
     font-size: calc(15px + 3 * ((100vw - 320px) / 970));
   }
 
-  .tabs-cars__body {
-    padding-bottom: calc(50px + 11 * ((100vw - 320px) / 970));
-  }
-
   .tabs-cars__main-img {
     left: calc(0px + -200 * ((100vw - 320px) / 970));
+  }
+
+  .tabs-cars__description {
+    padding-bottom: calc(50px + 11 * ((100vw - 320px) / 970));
   }
 
   .img-main-cars__number {
