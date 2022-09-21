@@ -118,6 +118,8 @@ body {
 
 //Swiper
 @import 'base/swiper';
+//Табы==============================================================================
+@import 'base/tabs';
 //header ==============================================================
 @import 'styleHeader';
 //footer==================================================================
@@ -835,29 +837,6 @@ body {
 
   &__tabs {
   }
-
-  // .cars__bottom
-
-  &__bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-  }
-
-  // .cars__btn
-
-  &__btn {
-    margin: 0 0 25px 0;
-  }
-
-  // .cars__prise
-
-  &__prise {
-    font-weight: 600;
-    font-size: rem(20);
-    line-height: 154.1%;
-  }
 }
 
 .tabs-cars {
@@ -870,29 +849,13 @@ body {
   // .tabs-cars__body
 
   &__body {
-    @include adaptiv-value('padding-bottom', 61, 50, 1);
   }
 
   // .tabs-cars__car
 
   &__car {
     position: relative;
-    display: none;
-
-    &._active {
-      display: block;
-      animation: carAnim 0.5s ease 0s;
-    }
   }
-  @keyframes carAnim {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
   // .tabs-cars__main-img
 
   &__main-img {
@@ -916,10 +879,34 @@ body {
   // .tabs-cars__description
 
   &__description {
+    @include adaptiv-value('padding-bottom', 61, 50, 1);
+  }
+
+  // .tabs-cars__bottom
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  // .tabs-cars__btn
+
+  &__btn {
+    margin: 0 0 25px 0;
+  }
+
+  // .tabs-cars__prise
+
+  &__prise {
+    font-weight: 600;
+    font-size: rem(20);
+    line-height: 154.1%;
   }
 }
 .pagination-tabs-cars {
-  display: none;
+  // display: none;
   @media (min-width: $mobile){
     display: flex;
     align-items: center;
@@ -934,12 +921,6 @@ body {
       align-items: center;
       justify-content: center;
       cursor: pointer;
-
-      &._active {
-        .pagination-tabs-cars__body {
-          padding: 15px 45px 68px 36px;
-        }
-      }
     }
   
     // .pagination-tabs-cars__img

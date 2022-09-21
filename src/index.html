@@ -208,11 +208,19 @@
               </div>
             </div>
             <div class="cars__body">
-              <div class="cars__tabs tabs-cars">
-                <div class="tabs-cars__pagination pagination-tabs-cars"></div>
-                <div class="tabs-cars__body">
+              <div data-tabs class="cars__tabs tabs-cars tabs">
+                <nav data-tabs-titles class="tabs-cars__pagination pagination-tabs-cars">
+                  <button class="pagination-tabs-cars__item _tab-active" type="button">
+                    <div class="pagination-tabs-cars__img _ibg">
+                      <img src="@img/cars/porshe/car.png" alt="porshe">
+                    </div>
+                    <div class="pagination-tabs-cars__body">
+                      <div class="pagination-tabs-cars__name">911 GT3</div>
+                    </div>
+                  </button>
+                </nav>
+                <div data-tabs-body class="tabs-cars__body">
                   <div class="tabs-cars__car">
-                    <img class="_tab-img" src="@img/cars/porshe/car.png" alt="porshe">
                     <div class="tabs-cars__main-img img-main-cars _ibg">
                       <img src="@img/cars/porshe/bigCar.jpg" alt="porshe">
                       <div class="img-main-cars__number">360<span>0</span></div>
@@ -268,13 +276,13 @@
                         </div>
                       </div>
                     </div>
+                    <div class="tabs-cars__bottom">
+                      <button class="tabs-cars__btn btn" type="button">ЗАКАЗАТЬ</button>
+                      <div class="tabs-cars__prise">От 200 € за программу</div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="cars__bottom">
-              <button class="cars__btn btn" type="button">ЗАКАЗАТЬ</button>
-              <div class="cars__prise">От 200 € за программу</div>
             </div>
           </div>
         </section>
@@ -351,7 +359,7 @@
                     </div>
                     <div class="slider-reviews__info">
                       <div class="slider-reviews__name">Антон Щербак</div>
-                      <div class="slider-reviews__location">Москва</div>
+                      <div class="slider-reviews__location">Лондон</div>
                       <div class="slider-reviews__stars">
                         <div class="slider-reviews__star _icon-star"></div>
                         <div class="slider-reviews__star _icon-star"></div>
@@ -425,7 +433,7 @@
                     </div>
                     <div class="slider-reviews__info">
                       <div class="slider-reviews__name">Антон Вишкин</div>
-                      <div class="slider-reviews__location">Москва</div>
+                      <div class="slider-reviews__location">Лондон</div>
                       <div class="slider-reviews__stars">
                         <div class="slider-reviews__star _icon-star"></div>
                         <div class="slider-reviews__star _icon-star"></div>

@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     targetElement.closest('.qs-square').classList.add('qs-active');
   }
 
-  //*Удаление background img с program
+  //*Удаление background img с program на mobile
   function removeBg(element) {
     document.querySelectorAll(element).forEach(item => {
       if (item.classList.contains('_ibg')) {
@@ -111,47 +111,6 @@ document.addEventListener("DOMContentLoaded", () => {
     removeBg('.item-program');
   }
 
-  //* Табы=========================================================================
-  function carsTabs(targetEl) {
-    const cars = document.querySelectorAll('.tabs-cars__car'),
-          tabs = document.querySelectorAll('.pagination-tabs-cars__item');
-
-    if (tabs.length) {
-      for (let i = 0; i < cars.length; i++) {
-        cars[i].classList.remove('_active');
-        tabs[i].classList.remove('_active');
-      }
-    }      
-
-    targetEl.classList.add('_active');
-    cars[targetEl.dataset.car].classList.add('_active');
-  }
-
-  addTabsBtns();
-  carsTabs(document.querySelector('.pagination-tabs-cars__item'));
-
-  function addTabsBtns() {
-    const cars = document.querySelectorAll('.tabs-cars__car'),
-          tabs = document.querySelector('.pagination-tabs-cars'),
-          modelName = document.querySelectorAll('.img-main-cars__title'),
-          modelSrc = document.querySelectorAll('._tab-img');
-      
-    for (let i = 0; i < cars.length; i++) {
-      tabs.insertAdjacentHTML("beforeend", `
-        <button class="pagination-tabs-cars__item" data-car="${i}" type="button">
-          <div class="pagination-tabs-cars__img _ibg">
-            <img src="${modelSrc[i].getAttribute('src')}" alt="porshe">
-          </div>
-          <div class="pagination-tabs-cars__body">
-            <div class="pagination-tabs-cars__name">${modelName[i].innerHTML}</div>
-          </div>
-        </button>
-      `);
-      ibg();
-    }
-
-  }
-
   //* Показ количества отзывов===========================================================
 
   function showQuantityReviews() {
@@ -159,23 +118,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.swiper-pagination-bullet').length;
   }
   showQuantityReviews();
-
-  //* навигация======================================================================
-  function scrollToBlock(btn) {
-    const btnLink = btn.getAttribute('href');
-    
-    if (btnLink) {
-      const currentSection = document.querySelector(btnLink);
-
-      window.scrollBy({
-        top: currentSection.getBoundingClientRect().top,
-        behavior: "smooth",
-      });
-      
-      document.documentElement.classList.remove("menu-open");
-      document.body.classList.remove('_lock');
-    }
-  }
 
   //* анимация при прокрутке блока program=======================================
   document.addEventListener("scroll", showBocks);

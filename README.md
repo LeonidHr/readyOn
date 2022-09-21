@@ -10,7 +10,7 @@ __After__
 ```
 npm run dev
 ```
-__After end__
+__After end for building__
 ```
 npm run build
 ```

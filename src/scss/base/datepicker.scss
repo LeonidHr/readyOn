@@ -235,7 +235,7 @@
 }
 .qs-active:not(:first-child, :nth-child(6)) {
 	border: 2px solid $redColor;
-	border-radius: 50%;
+	border-radius: 50% !important;
 }
 .qs-datepicker .qs-square.qs-range-date-start:not(.qs-range-date-6) {
 	border-top-right-radius: 0;
