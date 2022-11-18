@@ -15,9 +15,16 @@ __After end for building__
 npm run build
 ```
 ## \#Demo
-[ReadyOn demo](https://leonidhr.github.io/readyOn/)
+[https://leonidhr.github.io/readyOn/](https://leonidhr.github.io/readyOn/)
+
+<img src="./src/img/preview.png" width="726">
 
 ## \#Libraries
+
+## \#Sending emails
+
+__In order for sending letters to mail to work, you need to add the [PHPMailer pragin](https://github.com/PHPMailer/PHPMailer) to the root of the project__
+
 [Swiper](https://swiperjs.com)
 ```js
 import Swiper, { Navigation, EffectFade, Pagination } from "swiper";
