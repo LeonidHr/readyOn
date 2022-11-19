@@ -17,7 +17,16 @@ npm run build
 ## \#Demo
 [https://leonidhr.github.io/readyOn/](https://leonidhr.github.io/readyOn/)
 
-<img src="./src/img/preview.png" width="726">
+<img src="./src/img/preview.gif" width="726">
+
+## \#Features
+* Custom swipers
+* Site navigation
+* Custom calendar using datepicker
+* Animation when scrolling to the block
+* Tabs
+* Sending an email using PHPMailer
+
 
 ## \#Libraries
 
