@@ -1,641 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20221119060802">
-  <title>Ready On</title>
-</head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-  <div class="header__wrapper">
-    <div class="header__container _container">
-      <div class="header__body">
-        <a class="header__logo _ibg" href="#">
-          <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
-        </a>
-        <div class="header__content">
-          <div class="menu header__menu">
-            <nav class="menu__body">
-              <ul class='menu__list'>
-                <li class="menu__item"><button data-goto="#main" class="menu__link menu__link_active" type="button">Трек-дни</button></li>
-                <li class="menu__item"><button data-goto="#cars" class="menu__link" type="button">Спорткары</button></li>
-                <li class="menu__item"><button data-goto="#certificates" class="menu__link" type="button">Сертификаты</button></li>
-                <li class="menu__item"><button data-goto="#how" class="menu__link" type="button">Как проходят заезды</button></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header__actions actions-header">
-            <a class="actions-header__item _icon-instagram" href="#"></a>
-            <a class="actions-header__item _icon-fb" href="#"></a>
-            <a class="actions-header__item actions-header__item_phone _icon-tel" href="tel:+3287766164"></a>
-          </div>
-          <div class="header__lang">
-            <span>RU</span>
-            <div class="_icon-shape-down header__arrow"></div>
-            <ul class="header__lang-list">
-              <li class="header__lang-item">
-                <a class="header__lang-link" href="#">EN</a>
-              </li>
-              <li class="header__lang-item">
-                <a class="header__lang-link" href="#">UK</a>
-              </li>
-            </ul>
-          </div>
-          <button class='icon-menu menu-icon'>
-            <div class="icon-menu__body">
-              <span></span>
-            </div>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-      <main class="page">
-        <section id="main" class="page__mainscreen mainscreen">
-          <div class="mainscreen__container _container">
-            <div class="mainscreen__content">
-              <h1 class="mainscreen__title main-title">ТРЕК-ДНИ <br><span>С READYONE</span></h1>
-              <div class="mainscreen__text">
-                <span></span>
-                <p>
-                  Не просто аренда спорткара, а настоящее 
-                  погружение в мир автоспорта
-                </p>
-              </div>
-              <button class="mainscreen__btn btn">ЗАКАЗАТЬ</button>
-            </div>
-            <div class="mainscreen__mouse"><span></span></div>
-          </div>
-        </section>
-        <section class="page__date date">
-          <div class="date__container _container">
-            <h2 class="date__title main-title">Выбери дату<br><span>для поездки</span></h2>
-            <div class="date__body">
-              <div class="date__slider slider-date">
-                <div class="slider-date__body _swiper">
-                  <div class="slider-date__slide">
-                    <h2 class="slider-date__title"><span>31</span>мая</h2>
-                    <div class="slider-date__day">вторник</div>
-                    <div class="slider-date__slide-body">
-                      <a class="slider-date__icon" href="#">
-                        <picture><source srcset="img/avatar/1.webp" type="image/webp"><img src="img/avatar/1.png" alt="instructor"></picture>
-                        <div class="slider-date__icon-body">
-                          <div class="slider-date__icon-name">Яркко Миеттинен</div>
-                          <div class="slider-date__icon-post">инструктор</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="slider-date__slide">
-                    <h2 class="slider-date__title"><span>6</span>июня</h2>
-                    <div class="slider-date__day">понедельник</div>
-                    <div class="slider-date__slide-body">
-                      <a class="slider-date__icon" href="#">
-                        <picture><source srcset="img/avatar/1.webp" type="image/webp"><img src="img/avatar/1.png" alt="instructor"></picture>
-                        <div class="slider-date__icon-body">
-                          <div class="slider-date__icon-name">Яркко Миеттинен</div>
-                          <div class="slider-date__icon-post">инструктор</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="slider-date__slide">
-                    <h2 class="slider-date__title"><span>1</span>июня</h2>
-                    <div class="slider-date__day">среда</div>
-                    <div class="slider-date__slide-body">
-                      <a class="slider-date__icon" href="#">
-                        <picture><source srcset="img/avatar/1.webp" type="image/webp"><img src="img/avatar/1.png" alt="instructor"></picture>
-                        <div class="slider-date__icon-body">
-                          <div class="slider-date__icon-name">Яркко Миеттинен</div>
-                          <div class="slider-date__icon-post">инструктор</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider-date__arrows slider-arrows">
-                  <button class="slider-arrow slider-arrow_prev _icon-shape-down"></button>
-                  <button class="slider-arrow slider-arrow_next _icon-shape-down"></button>
-                </div>
-              </div>
-              <div class="date__datepicker">
-                <div class="datepicker">
-                  <input data-datepicker>
-                </div>
-                <div class="date__reviews">
-                  <div class="review-date date__review">
-                    <div class="review-date__date">
-                      <div class="review-date__number"><span>19</span></div>
-                      <div class="review-date__month">августа</div>
-                      <div class="review-date__day">пятница</div>
-                    </div>
-                    <div class="review-date__text">
-                      Моя поездка была не описуема! Я обязательно возьму вторую поездку.
-                    </div>
-                  </div>
-                   <div class="review-date date__review">
-                    <div class="review-date__date">
-                      <div class="review-date__number"><span>22</span></div>
-                      <div class="review-date__month">августа</div>
-                      <div class="review-date__day">понедельник</div>
-                    </div>
-                    <div class="review-date__text">
-                      Моя поездка была не описуема! Я обязательно возьму вторую поездку.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="page__program program">
-          <div class="program__container _container">
-            <h2 class="program__title _title">Что включает программа</h2>
-            <div class="program__body">
-              <div class="program__item item-program _ibg">
-                <picture><source srcset="img/program/1.webp" type="image/webp"><img class="program__bg" src="img/program/1.jpg" alt="car"></picture>
-                <div class="item-program__body">
-                  <div class="item-program__num">01</div>
-                  <div class="item-program__content">
-                    <h4 class="item-program__title">АРЕНДА СПОРТКАРА</h4>
-                    <div class="item-program__text">
-                      <p>
-                        Автомобили, готовые к экстремальным нагрузкам                     
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item-program__img _ibg">
-                  <picture><source srcset="img/mobileProgram/1.webp" type="image/webp"><img src="img/mobileProgram/1.jpg" alt="sportcar"></picture>
-                </div>
-              </div>
-              <div class="program__item item-program _ibg">
-                <picture><source srcset="img/program/2.webp" type="image/webp"><img class="program__bg" src="img/program/2.jpg" alt="road"></picture>
-                <div class="item-program__body">
-                  <div class="item-program__num">02</div>
-                  <div class="item-program__content">
-                    <h4 class="item-program__title">ГОНОЧНЫЙ ИНСТРУКТОР</h4>
-                    <div class="item-program__text">
-                      <p>
-                        Профессионалы, тренирующие пилотов самого разного уровня                   
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item-program__img _ibg">
-                  <picture><source srcset="img/mobileProgram/2.webp" type="image/webp"><img src="img/mobileProgram/2.jpg" alt="instructor"></picture>
-                </div>
-              </div>
-              <div class="program__item item-program _ibg">
-                <picture><source srcset="img/program/3.webp" type="image/webp"><img class="program__bg" src="img/program/3.jpg" alt="tracks"></picture>
-                <div class="item-program__body">
-                  <div class="item-program__num">03</div>
-                  <div class="item-program__content">
-                    <h4 class="item-program__title">потрясающие треки</h4>
-                    <div class="item-program__text">
-                      <p>
-                        Лучшие гоночные трассы Бельгии                   
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item-program__img _ibg">
-                  <picture><source srcset="img/mobileProgram/3.webp" type="image/webp"><img src="img/mobileProgram/3.jpg" alt="tracks"></picture>
-                </div>
-              </div>
-              <div class="program__item item-program _ibg">
-                <picture><source srcset="img/program/4.webp" type="image/webp"><img class="program__bg" src="img/program/4.jpg" alt="skill"></picture>
-                <div class="item-program__body">
-                  <div class="item-program__num">04</div>
-                  <div class="item-program__content">
-                    <h4 class="item-program__title">ВНИМАНИЕ К КАЖДОЙ ДЕТАЛИ</h4>
-                    <div class="item-program__text">
-                      <p>
-                        Оборудованные боксы и индивидуальная экипировка – мы позаботились обо всем
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item-program__img _ibg">
-                  <picture><source srcset="img/mobileProgram/4.webp" type="image/webp"><img src="img/mobileProgram/4.jpg" alt="skill"></picture>
-                </div>
-              </div>
-              <div class="program__item item-program _ibg">
-                <picture><source srcset="img/program/5.webp" type="image/webp"><img class="program__bg" src="img/program/5.jpg" alt="flag"></picture>
-                <div class="item-program__body">
-                  <div class="item-program__num">05</div>
-                  <div class="item-program__content">
-                    <h4 class="item-program__title">НЕЗАБЫВАЕМЫЙ ОПЫТ</h4>
-                    <div class="item-program__text">
-                      <p>
-                        Видео заезда и сертификат о прохождении курса для каждого клиента
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item-program__img _ibg">
-                  <picture><source srcset="img/mobileProgram/5.webp" type="image/webp"><img src="img/mobileProgram/5.jpg" alt="woman"></picture>
-                </div>
-              </div>
-            </div>
-            <button class="program__btn btn" type="button">ЗАКАЗАТЬ</button>
-          </div>
-        </section>
-        <section id="cars" class="page__cars cars">
-          <div class="cars__container _container">
-            <div class="cars__top">
-              <h2 class="cars__title _title">СПОРТКАРЫ</h2>
-              <div class="cars__text">
-                <p>
-                  Мы располагаем собственным парком автомобилей. Все спорткары специально подготовлены для экстремальных нагрузок и достижения максимального удовольствия от управления
-                </p>
-              </div>
-            </div>
-            <div class="cars__body">
-              <div data-tabs class="cars__tabs tabs-cars tabs">
-                <nav data-tabs-titles class="tabs-cars__pagination pagination-tabs-cars">
-                  <button class="pagination-tabs-cars__item _tab-active" type="button">
-                    <div class="pagination-tabs-cars__img _ibg">
-                      <picture><source srcset="img/cars/porshe/car.webp" type="image/webp"><img src="img/cars/porshe/car.png" alt="porshe"></picture>
-                    </div>
-                    <div class="pagination-tabs-cars__body">
-                      <div class="pagination-tabs-cars__name">911 GT3</div>
-                    </div>
-                  </button>
-                </nav>
-                <div data-tabs-body class="tabs-cars__body">
-                  <div class="tabs-cars__car">
-                    <div class="tabs-cars__main-img img-main-cars _ibg">
-                      <picture><source srcset="img/cars/porshe/bigCar.webp" type="image/webp"><img src="img/cars/porshe/bigCar.jpg" alt="porshe"></picture>
-                      <div class="img-main-cars__number">360<span>0</span></div>
-                      <div class="img-main-cars__model">
-                        <div class="img-main-cars__title">911 GT3</div>
-                        <div class="img-main-cars__flag _ibg">
-                          <picture><source srcset="img/cars/flag.webp" type="image/webp"><img src="img/cars/flag.png" alt="flag"></picture>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tabs-cars__slider slider-cars">
-                      <div class="slider-cars__body _swiper">
-                        <div class="slider-cars__slide">
-                          <div class="slider-cars__img _ibg">
-                            <picture><source srcset="img/cars/1.webp" type="image/webp"><img src="img/cars/1.jpg" alt="porshe"></picture>
-                          </div>
-                        </div>
-                        <div class="slider-cars__slide">
-                          <div class="slider-cars__img _ibg">
-                            <picture><source srcset="img/cars/2.webp" type="image/webp"><img src="img/cars/2.jpg" alt="porshe"></picture>
-                          </div>
-                        </div>
-                        <div class="slider-cars__slide">
-                          <div class="slider-cars__img _ibg">
-                            <picture><source srcset="img/cars/3.webp" type="image/webp"><img src="img/cars/3.jpg" alt="porshe"></picture>
-                          </div>
-                        </div>
-                        <div class="slider-cars__slide">
-                          <div class="slider-cars__img _ibg">
-                            <picture><source srcset="img/cars/4.webp" type="image/webp"><img src="img/cars/4.jpg" alt="porshe"></picture>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tabs-cars__description description-cars">
-                      <div class="description-cars__model">PORSCHE <span>911 GT3</span></div>
-                      <div class="description-cars__body">
-                        <div class="description-cars__item">
-                          <div class="description-cars__label">1.48 минут</div>
-                          <div class="description-cars__text">Время круга на MRW</div>
-                        </div>
-                        <div class="description-cars__item">
-                          <div class="description-cars__label">306 км/час</div>
-                          <div class="description-cars__text">Максимальная скорость</div>
-                        </div>
-                        <div class="description-cars__item">
-                          <div class="description-cars__label">4.1 секунд</div>
-                          <div class="description-cars__text">Разгон 0-100 км/ч</div>
-                        </div>
-                        <div class="description-cars__item">
-                          <div class="description-cars__label">420 л/с</div>
-                          <div class="description-cars__text">Мощность двигателя</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tabs-cars__bottom">
-                      <button class="tabs-cars__btn btn" type="button">ЗАКАЗАТЬ</button>
-                      <div class="tabs-cars__prise">От 200 € за программу</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="certificates" class="page__gift gift">
-          <div class="gift__container _container">
-            <div class="gift__content content-gift">
-              <h2 class="content-gift__title _title">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</h2>
-              <div class="content-gift__label">
-                <div class="content-gift__label-img">
-                  <picture><source srcset="img/hellyBox/box.webp" type="image/webp"><img src="img/hellyBox/box.png" alt="gift"></picture>
-                </div>
-                <div class="content-gift__label-text">Лучший подарок на свете</div>
-              </div>
-              <ul class="content-gift__list">
-                <li class="content-gift__item">
-                  <a class="content-gift__link _icon-check" >
-                    Подарок, способный изменить жизнь
-                  </a>
-                </li>
-                <li class="content-gift__item">
-                  <a class="content-gift__link _icon-check" >
-                    Для близкого человека, друга, коллеги или партнёра
-                  </a>
-                </li>
-                <li class="content-gift__item">
-                  <a class="content-gift__link _icon-check">
-                    Подарочный сертификат доступен в виде программы или депозита на определённую сумму
-                  </a>
-                </li>
-              </ul>
-              <div class="content-gift__buttons">
-                <button class="content-gift__btn btn" type="button">ЗАКАЗАТЬ</button>
-                <button class="content-gift__btn btn btn_not-bg" type="button">ПОДРОБНЕЕ</button>
-              </div>
-            </div>
-            <div class="gift__img _ibg">
-              <picture><source srcset="img/hellyBox/bigBox.webp" type="image/webp"><img src="img/hellyBox/bigBox.png" alt="big giftset"></picture>
-            </div>
-          </div>
-        </section>
-        <section id="how" class="page__how how">
-          <div class="how__container _container">
-            <div class="how__top">
-              <h2 class="how__title _title">КАК ПРОХОДИТ ЗАЕЗД</h2>
-              <div class="how__text">
-                Наши инструкторы — настоящие профессионалы, способные быстро и безопасно передать накопленные в автоспорте знания
-              </div>
-            </div>
-            <div class="how__body">
-              <div class="how__video">
-                <div class="how__arrow">
-                  <img src="img/bigIcons/shape.svg" alt="shape">
-                </div>
-                <iframe src="https://www.youtube.com/embed/n2uPVroPqXo?start=96" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="page__reviews reviews">
-          <div class="reviews__container _container">
-            <div class="reviews__top">
-              <h2 class="reviews__title _title">Отзывы</h2>
-              <div class="reviews__conter counter-reviews _icon-star">
-                <div class="counter-reviews__number">4.8</div>
-                <div class="counter-reviews__estimates"><span></span> оценок</div>
-              </div>
-            </div>
-            <div class="reviews__slider slider-reviews">
-              <div class="slider-reviews__body _swiper">
-                <div class="slider-reviews__slide">
-                  <div class="slider-reviews__top">
-                    <div class="slider-reviews__avatar">
-                      <picture><source srcset="img/avatar/2.webp" type="image/webp"><img src="img/avatar/2.png" alt="avatar"></picture>
-                    </div>
-                    <div class="slider-reviews__info">
-                      <div class="slider-reviews__name">Антон Щербак</div>
-                      <div class="slider-reviews__location">Лондон</div>
-                      <div class="slider-reviews__stars">
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider-reviews__text">
-                    <p>Заказывал строительство
-                      дома у компании Paneco.
-                      Переживал по поводу
-                      сроков, так как была
-                      поздняя осень. Но скорость
-                      строительства меня
-                      поразила. Через 4 дня уже
-                      стояла готовая коробка, а
-                      внутреннее оформление
-                      заняло еще от силы 3
-                      недели. В декабре мы
-                      заселились! Рекомендую!</p>
-                  </div>
-                </div>
-                <div class="slider-reviews__slide">
-                  <div class="slider-reviews__top">
-                    <div class="slider-reviews__avatar">
-                      <picture><source srcset="img/avatar/3.webp" type="image/webp"><img src="img/avatar/3.png" alt="avatar"></picture>
-                    </div>
-                    <div class="slider-reviews__info">
-                      <div class="slider-reviews__name">Гена Трухин</div>
-                      <div class="slider-reviews__location">Химки</div>
-                      <div class="slider-reviews__stars">
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider-reviews__text">
-                    <p>У меня небольшая строительная компания. Искал подрядчиков, так вышел на ребят с Paneco. Сотрудничаем уже 2 года. Все заказы выполняются вовремя, на качество за все это время ни одного нарекания. Да и цены радуют своей доступностью. Доволен на все 100%.</p>
-                  </div>
-                </div>
-                <div class="slider-reviews__slide">
-                  <div class="slider-reviews__top">
-                    <div class="slider-reviews__avatar">
-                      <picture><source srcset="img/avatar/4.webp" type="image/webp"><img src="img/avatar/4.png" alt="avatar"></picture>
-                    </div>
-                    <div class="slider-reviews__info">
-                      <div class="slider-reviews__name">Ангелина</div>
-                      <div class="slider-reviews__location">Долгопрудный</div>
-                      <div class="slider-reviews__stars">
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider-reviews__text">
-                    <p>Я архитектор-дизайнер, поэтому когда ко мнеобращаются за проектом современного доме, я всегда советую обращаться сюда. Во-первых, сверхбыстрые сроки возведения, во вторых, качество проверенное временем. Моя благодрность вам за взаимовыгодное сотрудничество.</p>
-                  </div>
-                </div>
-                <div class="slider-reviews__slide">
-                  <div class="slider-reviews__top">
-                    <div class="slider-reviews__avatar">
-                      <picture><source srcset="img/avatar/5.webp" type="image/webp"><img src="img/avatar/5.png" alt="avatar"></picture>
-                    </div>
-                    <div class="slider-reviews__info">
-                      <div class="slider-reviews__name">Антон Вишкин</div>
-                      <div class="slider-reviews__location">Лондон</div>
-                      <div class="slider-reviews__stars">
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider-reviews__text">
-                    <p>Заказывал строительство
-                      дома у компании Paneco.
-                       Переживал по поводу
-                      сроков, так как была
-                      поздняя осень. Но скорость
-                      строительства меня
-                      поразила. Через 4 дня уже
-                      стояла готовая коробка, а
-                      внутреннее оформление
-                      заняло еще от силы 3
-                      недели. В декабре мы
-                      заселились! Рекомендую!</p>
-                  </div>
-                </div>
-                <div class="slider-reviews__slide">
-                  <div class="slider-reviews__top">
-                    <div class="slider-reviews__avatar">
-                      <picture><source srcset="img/avatar/3.webp" type="image/webp"><img src="img/avatar/3.png" alt="avatar"></picture>
-                    </div>
-                    <div class="slider-reviews__info">
-                      <div class="slider-reviews__name">Гена Трухин</div>
-                      <div class="slider-reviews__location">Химки</div>
-                      <div class="slider-reviews__stars">
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                        <div class="slider-reviews__star _icon-star"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider-reviews__text">
-                    <p>У меня небольшая строительная компания. Искал подрядчиков, так вышел на ребят с Paneco. Сотрудничаем уже 2 года. Все заказы выполняются вовремя, на качество за все это время ни одного нарекания. Да и цены радуют своей доступностью. Доволен на все 100%.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="slider-reviews__controls controls-slider-reviews">
-                <div class="controls-slider-reviews__arrows slider-arrows">
-                  <div class="slider-arrow slider-arrow_prev _icon-shape-down"></div>
-                  <div class="slider-arrow slider-arrow_next _icon-shape-down"></div>
-                </div>
-                <div class="controls-slider-reviews__dots"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="page__questions questions">
-          <div class="questions__container _container">
-            <div data-spollers data-one-spoller class="questions__body">
-              <div class="questions__item">
-                <button data-spoller class="questions__title _icon-shape-down" type="button">
-                  <span>Что такое “трек-день”?</span>
-                </button>
-                <div class="questions__content">
-                  <div class="questions__text">
-                    "Трек-день" – день, когда гоночная трасса открыта для всех желающих. В рамках трек-дней мы и проводим наши заезды. Расписание трек-дней обычно известно за несколько недель. Мы можем приглашать для участия в них и бронировать заезды.
-                  </div>
-                </div>
-              </div>
-              <div class="questions__item">
-                <button data-spoller class="questions__title _icon-shape-down" type="button">
-                  <span>
-                    Что такое “заезд” и почему его продолжительность различается на разных трассах?
-                  </span>
-                </button>
-                <div class="questions__content">
-                  <div class="questions__text">
-                    "Трек-день" – день, когда гоночная трасса открыта для всех желающих. В рамках трек-дней мы и проводим наши заезды. Расписание трек-дней обычно известно за несколько недель. Мы можем приглашать для участия в них и бронировать заезды.
-                  </div>
-                </div>
-              </div>
-              <div class="questions__item">
-                <button data-spoller class="questions__title _icon-shape-down" type="button">
-                  <span>Можно ли приехать на гоночную трассу компанией?</span>
-                </button>
-                <div class="questions__content">
-                  <div class="questions__text">
-                    "Трек-день" – день, когда гоночная трасса открыта для всех желающих. В рамках трек-дней мы и проводим наши заезды. Расписание трек-дней обычно известно за несколько недель. Мы можем приглашать для участия в них и бронировать заезды.
-                  </div>
-                </div>
-              </div>
-              <div class="questions__item">
-                <button data-spoller class="questions__title _icon-shape-down" type="button">
-                  <span>Какой возраст и стаж необходим для участия в заезде?</span>
-                </button>
-                <div class="questions__content">
-                  <div class="questions__text">
-                    "Трек-день" – день, когда гоночная трасса открыта для всех желающих. В рамках трек-дней мы и проводим наши заезды. Расписание трек-дней обычно известно за несколько недель. Мы можем приглашать для участия в них и бронировать заезды.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="page__feedback feedback">
-          <div class="feedback__container _container">
-            <div class="feedback__item feedback__item-content">
-              <h2 class="feedback__title _title">НЕ НАШЛИ ОТВЕТА НА СВОЙ ВОПРОС?</h2>
-              <div class="feedback__label">Напишите или позвоните нам</div>
-              <div class="feedback__contacts">
-                <a class="feedback__phone feedback__contacts-item _icon-arrow-top" href="tel:+3287766164">+32 87 76 61 64</a>
-                <a class="feedback__email feedback__contacts-item _icon-arrow-top" href="mailto:email@readyon.be" target="_blank">
-                  email@readyon.be
-                </a>
-              </div>
-            </div>
-            <div class="feedback__item feedback__item-form">
-              <form action="#" class="feedback__form form-feedback">
-                <div class="form-feedback__item">
-                  <label for="name" class="form-feedback__label">Как вас зовут?</label>
-                  <input type="text" name="name" class="form-feedback__input _name" data-req autocomplete="off">
-                </div>
-                <div class="form-feedback__item">
-                  <label for="email" class="form-feedback__label">Email</label>
-                  <input type="text" name="email" class="form-feedback__input _email" autocomplete="off" data-req>
-                </div>
-                <div class="form-feedback__item">
-                  <label for="textarea" class="form-feedback__label">Сообщение</label>
-                  <textarea name="textarea" class="form-feedback__input form-feedback__input_textarea _message" data-req></textarea>
-                </div>
-                <div class="form-feedback__item form-feedback__item_checkbox" >
-                  <input type="checkbox" name="checkbox" class="form-feedback__checkbox" tabindex="-1" data-req>
-                  <label for="checkbox" class="form-feedback__label form-feedback__label_inline _icon-check">
-                    Я согласен на обработку персональных данных
-                  </label>
-                </div>
-                <button class="form-feedback__btn btn" type="submit">ОТПРАВИТЬ</button>
-                <div class="form-feedback__modal modal-form"></div>
-              </form>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-  <div class="footer__cotnainer _container">
-    <div class="footer__text">© 2017 - 2022 ReadyOn</div>
-    <div class="footer__social social">
-      <a class="social__item _icon-arrow-top" href="#">Instagram</a>
-      <a class="social__item _icon-arrow-top" href="#">Facebook</a>
-      <a class="social__item _icon-arrow-top" href="#">Youtube</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <script src="js/app.min.js?_v=20221119060802"></script>
-  </body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/1.ico" type="image/x-icon">
+		<title>Верстка ReadyOn</title>
+	</head>
+	<body>
+		<div class="rootpage">
+			<h1>Верстка ReadyOn</h1>
+			<div class="rootpage__info">
+				Описание проекта
+			</div>
+			<h2>Готовые странцы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html">Главная</a></li>
+			</ol>
+			<div class="rootpage__tnx">
+				<h2>Спасибо за заказ!</h2>
+				<p>Буду рад хорошему отзыву.</p>
+				<p>Обращайтесь еще!</p>
+			</div>
+			<div class="rootpage__contacts">
+				<h2>Мои контакты:</h2>
+				<p>Телеграм: <a href="https://t.me/le0nidHr">le0nidHr</a></p>
+			</div>
+		</div>
+	</body>
+	<style>
+		@charset "UTF-8";
+		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+		* ,*::before, *::after {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box; 
+		}
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			min-width: 320px;
+			width: 100%;
+			color: #fff;
+			background-color: #38373a;
+		}
+		body {
+			font-family: Montserrat;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 1rem;
+		}
+		a {
+			text-decoration: underline;
+			color: #ebe691
+		}
+		a:visited {
+			text-decoration: underline;
+			color: #aaa768;
+		}
+			a:hover {
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+		img {
+			vertical-align: top;
+		}
+		.wrapper {
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+		}
+		.rootpage{
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		@media (max-width: 767px) {
+			.rootpage{
+				padding:30px 15px;
+			}
+		}
+		h1 {
+			color: #ebe691;
+			font-size: 2.5rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+		@media (max-width: 767px) {
+			h1 {
+				font-size: 1.85rem;
+				margin: 0px 0px 1.25rem 0px;
+			}
+		}
+		h2 {
+			color: #ebe691;
+			font-size: 1.25rem;
+			margin: 0px 0px 1rem 0px;
+		}
+		@media (max-width: 767px) {
+			 h2 {
+				font-size: 1.125rem;
+				margin: 0px 0px 1rem 0px;
+			}
+		}
+		.rootpage__info{
+			line-height: 140%;
+			margin: 0px 0px 1.5rem 0px;
+		}
+
+		.rootpage__list{
+			margin: 0px 0px 2.25rem 1.25rem;
+		}
+		.rootpage__list li:not(:last-child){
+			margin: 0px 0px 15px 0px;
+		}
+		.rootpage__contacts,
+		.rootpage__tnx{
+			border-radius: 200px;
+			padding: 20px 65px;
+			line-height: 140%;
+		}
+		@media (max-width: 767px){
+		.rootpage__contacts,
+		.rootpage__tnx{
+			border-radius:40px;
+			padding: 20px;
+		}
+		}
+		.rootpage__contacts{
+			background: #32314a;
+			
+		}
+		.rootpage__contacts a{
+			color: #ebe691;
+		}
+		.rootpage__tnx{
+			background: #3c7461;
+			margin: 0px 0px 1rem 0px;
+		}
+	</style>
 </html>
